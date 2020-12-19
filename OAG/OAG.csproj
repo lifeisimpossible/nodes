@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA267428-65E9-4753-9943-6A3054B90AFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OAG</RootNamespace>
+    <AssemblyName>OAG</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Nodes\Closure.cs" />
+    <Compile Include="Nodes\Composites\CompleteSelector.cs" />
+    <Compile Include="Nodes\Composites\CompleteSequence.cs" />
+    <Compile Include="Nodes\Composites\Composite.cs" />
+    <Compile Include="Nodes\Composites\Selector.cs" />
+    <Compile Include="Nodes\Composites\Sequence.cs" />
+    <Compile Include="Nodes\Decorators\Decorator.cs" />
+    <Compile Include="Nodes\Decorators\DurationMonitor.cs" />
+    <Compile Include="Nodes\Decorators\Not.cs" />
+    <Compile Include="Nodes\Decorators\Transitioner.cs" />
+    <Compile Include="Nodes\Identity.cs" />
+    <Compile Include="Nodes\Node.cs" />
+    <Compile Include="Nodes\Status.cs" />
+    <Compile Include="Nodes\States\State.cs" />
+    <Compile Include="Nodes\States\StateMachine.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program.il" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <CompileDependsOn>
+      HideILFromCompile;
+      $(CompileDependsOn);
+      InitializeIL;
+      CoreDecompile;
+      CoreCompileIL;
+    </CompileDependsOn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /y "$(TargetPath)" "C:\fxserver\server\resources\oag_testing"</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="HideILFromCompile">
+    <ItemGroup>
+      <IL Include="@(Compile)" Condition="'%(Extension)'=='.il'" />
+      <Compile Remove="@(Compile)" Condition="'%(Extension)'=='.il'" />
+    </ItemGroup>
+  </Target>
+  <Target Name="InitializeIL">
+    <PropertyGroup>
+      <ILFile>@(IntermediateAssembly->'%(RootDir)%(Directory)%(Filename).il', ' ')</ILFile>
+      <ILResourceFile>@(IntermediateAssembly->'%(RootDir)%(Directory)%(Filename).res', ' ')</ILResourceFile>
+    </PropertyGroup>
+  </Target>
+  <Target Name="CoreDecompile" Inputs="@(IntermediateAssembly)" Outputs="$(ILFile)" Condition=" Exists ( @(IntermediateAssembly) ) ">
+    <GetFrameworkSdkPath>
+      <Output TaskParameter="Path" PropertyName="FrameworkSdkPath" />
+    </GetFrameworkSdkPath>
+    <PropertyGroup>
+      <ILDasm>"$(FrameworkSdkPath)bin\ildasm.exe" /nobar /linenum /output:"$(ILFile)" @(IntermediateAssembly->'"%(FullPath)"', ' ')</ILDasm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(FrameworkSdkPath)bin\NETFX 4.0 Tools\ildasm.exe' ) ">
+      <ILDasm>"$(FrameworkSdkPath)bin\NETFX 4.0 Tools\ildasm.exe" /nobar /linenum /output:"$(ILFile)" @(IntermediateAssembly->'"%(FullPath)"', ' ')</ILDasm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(FrameworkSdkPath)bin\NETFX 4.5.1 Tools\ildasm.exe' ) ">
+      <ILDasm>"$(FrameworkSdkPath)bin\NETFX 4.5.1 Tools\ildasm.exe" /nobar /linenum /output:"$(ILFile)" @(IntermediateAssembly->'"%(FullPath)"', ' ')</ILDasm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(FrameworkSdkPath)bin\NETFX 4.6 Tools\ildasm.exe' ) ">
+      <ILDasm>"$(FrameworkSdkPath)bin\NETFX 4.6 Tools\ildasm.exe" /nobar /linenum /output:"$(ILFile)" @(IntermediateAssembly->'"%(FullPath)"', ' ')</ILDasm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(FrameworkSdkPath)bin\NETFX 4.6.1 Tools\ildasm.exe' ) ">
+      <ILDasm>"$(FrameworkSdkPath)bin\NETFX 4.6.1 Tools\ildasm.exe" /nobar /linenum /output:"$(ILFile)" @(IntermediateAssembly->'"%(FullPath)"', ' ')</ILDasm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(FrameworkSdkPath)bin\NETFX 4.6.2 Tools\ildasm.exe' ) ">
+      <ILDasm>"$(FrameworkSdkPath)bin\NETFX 4.6.2 Tools\ildasm.exe" /nobar /linenum /output:"$(ILFile)" @(IntermediateAssembly->'"%(FullPath)"', ' ')</ILDasm>
+    </PropertyGroup>
+    <Exec Command="$(ILDasm)" />
+    <ItemGroup>
+      <FileWrites Include="$(ILFile)" />
+      <FileWrites Include="$(ILResourceFile)" />
+    </ItemGroup>
+    <PropertyGroup>
+      <ILSource>$([System.IO.File]::ReadAllText($(ILFile)))</ILSource>
+      <Replacement>// method ${method} forwardref removed for IL import</Replacement>
+      <Pattern>\.method [^{}]+ cil managed forwardref[^}]+} // end of method (?&lt;method&gt;[^ \r\t\n]+)</Pattern>
+      <ILSource>$([System.Text.RegularExpressions.Regex]::Replace($(ILSource), $(Pattern), $(Replacement)))</ILSource>
+      <Pattern>\.method [^{}]+ cil managed[^\a]+"extern was not given a DllImport attribute"[^}]+} // end of method (?&lt;method&gt;[^ \r\t\n]+)</Pattern>
+      <ILSource>$([System.Text.RegularExpressions.Regex]::Replace($(ILSource), $(Pattern), $(Replacement)))</ILSource>
+    </PropertyGroup>
+    <WriteLinesToFile File="$(ILFile)" Lines="$(ILSource)" Overwrite="true" />
+    <PropertyGroup>
+      <ILSource />
+    </PropertyGroup>
+    <Delete Files="@(IntermediateAssembly)" />
+  </Target>
+  <Target Name="CoreCompileIL" Inputs="@(IL)" Outputs="@(IntermediateAssembly)">
+    <GetFrameworkPath>
+      <Output TaskParameter="Path" PropertyName="FrameworkPath" />
+    </GetFrameworkPath>
+    <PropertyGroup>
+      <ILAsm>"$(FrameworkPath)\ilasm.exe" /nologo /quiet /output:@(IntermediateAssembly->'"%(FullPath)"', ' ')</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(FileAlignment)' != '' ">
+      <ILAsm>$(ILAsm) /alignment=$(FileAlignment)</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(BaseAddress)' != '' ">
+      <ILAsm>$(ILAsm) /base=$(BaseAddress)</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(OutputType)' == 'Library' ">
+      <ILAsm>$(ILAsm) /dll</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(DebugType)' == 'pdbonly' ">
+      <ILAsm>$(ILAsm) /pdb</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(DebugType)' == 'full' ">
+      <ILAsm>$(ILAsm) /debug</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Optimize)' == 'true' ">
+      <ILAsm>$(ILAsm) /optimize</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+      <ILAsm>$(ILAsm) /pe64 /x64</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Platform)' == 'Itanium' ">
+      <ILAsm>$(ILAsm) /pe64 /itanium</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(AssemblyOriginatorKeyFile)' != '' ">
+      <ILAsm>$(ILAsm) /key:"$(AssemblyOriginatorKeyFile)"</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(ILResourceFile)' ) ">
+      <ILAsm>$(ILAsm) /resource:"$(ILResourceFile)"</ILAsm>
+    </PropertyGroup>
+    <PropertyGroup Condition=" Exists ( '$(ILFile)' ) ">
+      <ILAsm>$(ILAsm) "$(ILFile)"</ILAsm>
+    </PropertyGroup>
+    <Exec Command="$(ILAsm) @(IL->'&quot;%(FullPath)&quot;', ' ')" />
+    <ItemGroup>
+      <FileWrites Include="@(IntermediateAssembly->'%(RootDir)%(Directory)DesignTimeResolveAssemblyReferencesInput.cache', ' ')" />
+    </ItemGroup>
+    <Touch Files="$(ILFile)" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

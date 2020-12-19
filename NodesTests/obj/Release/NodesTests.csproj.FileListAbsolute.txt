@@ -1,0 +1,17 @@
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\NodesTests.dll
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\NodesTests.pdb
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\OAG.exe
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\OAG.pdb
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\OAG.exe.config
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\oag\source\repos\OAG\NodesTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\oag\source\repos\OAG\NodesTests\obj\Release\NodesTests.csprojAssemblyReference.cache
+C:\Users\oag\source\repos\OAG\NodesTests\obj\Release\NodesTests.csproj.CoreCompileInputs.cache
+C:\Users\oag\source\repos\OAG\NodesTests\obj\Release\NodesTests.csproj.CopyComplete
+C:\Users\oag\source\repos\OAG\NodesTests\obj\Release\NodesTests.dll
+C:\Users\oag\source\repos\OAG\NodesTests\obj\Release\NodesTests.pdb

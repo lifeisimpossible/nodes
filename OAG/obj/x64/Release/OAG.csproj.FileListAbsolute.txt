@@ -1,0 +1,8 @@
+C:\Users\oag\source\repos\OAG\OAG\obj\x64\Release\OAG.csproj.CoreCompileInputs.cache
+C:\Users\oag\source\repos\OAG\OAG\obj\x64\Release\OAG.il
+C:\Users\oag\source\repos\OAG\OAG\obj\x64\Release\OAG.res
+C:\Users\oag\source\repos\OAG\OAG\obj\x64\Release\DesignTimeResolveAssemblyReferencesInput.cache
+C:\Users\oag\source\repos\OAG\OAG\obj\x64\Release\OAG.csprojAssemblyReference.cache
+C:\Users\oag\source\repos\OAG\OAG\obj\x64\Release\OAG.dll
+C:\Users\oag\source\repos\OAG\OAG\bin\x64\Release\OAG.dll.config
+C:\Users\oag\source\repos\OAG\OAG\bin\x64\Release\OAG.dll

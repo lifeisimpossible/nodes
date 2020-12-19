@@ -1,0 +1,15 @@
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\OAGUnitTests.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\oag\source\repos\OAG\OAGUnitTests\obj\Release\OAGUnitTests.csprojAssemblyReference.cache
+C:\Users\oag\source\repos\OAG\OAGUnitTests\obj\Release\OAGUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\oag\source\repos\OAG\OAGUnitTests\obj\Release\OAGUnitTests.csproj.CopyComplete
+C:\Users\oag\source\repos\OAG\OAGUnitTests\obj\Release\OAGUnitTests.dll
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\OAG.pdb
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\OAG.exe
+C:\Users\oag\source\repos\OAG\OAGUnitTests\bin\Release\OAG.exe.config
